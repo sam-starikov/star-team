@@ -1,0 +1,29 @@
+.header {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px 0;
+
+        p {
+            max-width: 650px;
+            font-weight: 600;
+            font-size: 24px;
+            text-align: center;
+            color: var(--black);
+        }
+    }
+
+    &__btn {
+        padding: 20px 50px;
+
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--white);
+
+        border-radius: 10px;
+        background: linear-gradient(180deg, #f42c2b 0%, rgb(81 40 40) 100%);
+    }
+}
