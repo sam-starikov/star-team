@@ -1,0 +1,40 @@
+.top {
+    padding: clamp(1.25rem, 0.982rem + 1.34vw, 2.188rem) 0;
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+
+    p {
+        max-width: 650px;
+        font-weight: 600;
+        font-size: clamp(0.75rem, 0.536rem + 1.07vw, 1.5rem);
+        text-align: center;
+        color: var(--black);
+    }
+
+    &__btn {
+        padding: clamp(0.75rem, 0.607rem + 0.71vw, 1.25rem)
+            clamp(1rem, 0.393rem + 3.04vw, 3.125rem);
+
+        font-weight: 700;
+        font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--white);
+
+        border-radius: 10px;
+        background: linear-gradient(180deg, #f42c2b 0%, rgb(81 40 40) 100%);
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+}

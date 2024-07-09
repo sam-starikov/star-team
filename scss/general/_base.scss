@@ -11,13 +11,21 @@ a {
     color: currentColor;
 }
 
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 .container {
     max-width: 1305px;
     padding: 0 15px;
     margin: 0 auto;
 
     &--small {
-        max-width: 1065px;
+        max-width: 1095px;
+    }
+    &--mobile {
+        max-width: 350px;
     }
 }
 
