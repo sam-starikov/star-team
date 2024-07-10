@@ -5,7 +5,13 @@ console.log(containerDesktop);
 
 function checkScreenSize() {
     if (window.innerWidth < 485) {
-        containerDesktop.forEach(el => el.classList.add('container--mobile'));
+        containerDesktop.forEach(el => {
+            if (el.classList.contains('container--lg')) {
+                el.classList.remove('container--mobile');
+            } else {
+                el.classList.add('container--mobile');
+            }
+        });
     } else {
         containerDesktop.forEach(el =>
             el.classList.remove('container--mobile')

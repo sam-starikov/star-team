@@ -2,6 +2,32 @@
     position: relative;
     padding: 40px 0;
 
+    @media (max-width: 480px) {
+        padding: 20px 0;
+    }
+
+    &--yellow {
+        padding: unset;
+        background-color: var(--text-color-accent-secondary);
+
+        &.description::before {
+            content: none;
+        }
+
+        .description {
+            &__body {
+                padding-left: 15px;
+
+                @media (max-width: 700px) {
+                    padding-bottom: 25px;
+                }
+            }
+            &__img {
+                flex-shrink: 0;
+            }
+        }
+    }
+
     &::before {
         content: url('./../img/description/description-decor.png');
         position: absolute;
@@ -55,10 +81,10 @@
     &__text {
         flex: 1;
         min-width: 350px;
+        font-size: clamp(0.875rem, 0.696rem + 0.89vw, 1.5rem);
 
-        & p {
-            font-size: clamp(0.875rem, 0.696rem + 0.89vw, 1.5rem);
-
+        & p,
+        li {
             &:not(:last-child) {
                 margin-bottom: 15px;
             }

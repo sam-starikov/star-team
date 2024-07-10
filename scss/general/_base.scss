@@ -14,6 +14,10 @@ a {
 .wrapper {
     min-height: 100vh;
     overflow: hidden;
+
+    &__info {
+        margin-bottom: 35px;
+    }
 }
 
 .container {
@@ -29,6 +33,11 @@ a {
     }
     &--mobile {
         max-width: 350px;
+    }
+    &--right {
+        max-width: unset;
+        padding-left: calc((100% - 1305px) / 2);
+        padding-right: unset;
     }
 }
 
