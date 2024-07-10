@@ -21,6 +21,9 @@ a {
     padding: 0 15px;
     margin: 0 auto;
 
+    &--lg {
+        max-width: 1400px;
+    }
     &--small {
         max-width: 1095px;
     }

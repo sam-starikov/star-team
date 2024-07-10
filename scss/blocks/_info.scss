@@ -1,0 +1,78 @@
+.info {
+    padding: 20px 30px;
+
+    background-color: var(--info-bg);
+    border-radius: 15px;
+
+    @media (max-width: 480px) {
+        padding: 20px 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 24px;
+        color: var(--white);
+
+        margin-bottom: 25px;
+
+        & span {
+            font-weight: 500;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__body {
+        padding: 40px 20px 30px;
+
+        border: 2px solid #fff;
+        border-radius: 15px;
+    }
+
+    &__link {
+        width: 393px;
+        height: 226px;
+        padding-top: 130px;
+
+        text-align: center;
+        font-size: 24px;
+        font-weight: 800;
+        color: #140202;
+
+        border-radius: 20px;
+        background-color: #fff;
+
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (max-width: 550px) {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        & p span {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        &:first-child {
+            background-image: url('./../img/info/info-bg-01.jpg');
+        }
+        &:nth-child(2) {
+            background-image: url('./../img/info/info-bg-02.jpg');
+        }
+        &:nth-child(3) {
+            background-image: url('./../img/info/info-bg-01.jpg');
+        }
+    }
+}

@@ -1,5 +1,5 @@
 :root {
-    --font-family: "Montserrat", sans-serif;
+    --font-family: 'Montserrat', sans-serif;
     --text-color-primary: #140202;
     --text-color-secondary: #111010;
     --text-color-accent-primary: #e02927;
@@ -10,4 +10,6 @@
 
     --btn-bg: #460d09,
         linear-gradient(180deg, #f42c2b 0%, rgba(0, 0, 0, 0) 100%);
+
+    --info-bg: #420707;
 }
