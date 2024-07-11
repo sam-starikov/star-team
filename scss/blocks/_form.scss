@@ -6,7 +6,8 @@
     right: clamp(0.313rem, -4.122rem + 10.14vw, 5rem);
     width: clamp(17.5rem, 15.156rem + 7.81vw, 22.188rem);
 
-    display: grid;
+    // display: grid;
+
     padding: clamp(0.938rem, 0.469rem + 1.56vw, 1.875rem);
 
     border-radius: 15px;
@@ -14,12 +15,12 @@
     background-color: var(--white);
 
     @media (max-width: 700px) {
-        top: 80%;
+        top: clamp(19.375rem, 0.284rem + 63.64vw, 28.125rem);
         right: 50%;
         transform: translate(50%, 0);
     }
     @media (max-width: 480px) {
-        top: 45%;
+        top: clamp(7.188rem, -12.188rem + 96.88vw, 16.875rem);
         transform: translate(50%, 40%);
     }
 

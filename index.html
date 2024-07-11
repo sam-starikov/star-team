@@ -25,50 +25,52 @@
 
             <header class="wrapper__header header">
                 <form class="form" action="">
-                    <p class="form__title">
-                        Успей получить <span>Силу Султана бесплатно*</span>,
-                        пока действует акция
-                    </p>
-                    <p class="form__sub-title">Акция* закончится через</p>
-                    <div class="form__timer">
-                        <div class="form__column">
-                            <div class="form__hours">1</div>
-                            <span>часов</span>
+                    <div class="form__wrapper">
+                        <p class="form__title">
+                            Успей получить <span>Силу Султана бесплатно*</span>,
+                            пока действует акция
+                        </p>
+                        <p class="form__sub-title">Акция* закончится через</p>
+                        <div class="form__timer">
+                            <div class="form__column">
+                                <div class="form__hours">1</div>
+                                <span>часов</span>
+                            </div>
+                            <div class="form__column">
+                                <div class="form__minutes">20</div>
+                                <span>минут</span>
+                            </div>
+                            <div class="form__column">
+                                <div class="form__seconds">30</div>
+                                <span>секунд</span>
+                            </div>
                         </div>
-                        <div class="form__column">
-                            <div class="form__minutes">20</div>
-                            <span>минут</span>
+                        <div class="form__inputs">
+                            <label class="form__label">
+                                Ваше имя*
+                                <input
+                                    type="text"
+                                    class="form__input"
+                                    placeholder="Введите ваше имя" />
+                            </label>
+                            <label class="form__label">
+                                Контактный телефон*
+                                <input
+                                    type="tel"
+                                    placeholder="+(7)-XXX-XXX-XX-XX"
+                                    class="form__input" />
+                            </label>
                         </div>
-                        <div class="form__column">
-                            <div class="form__seconds">30</div>
-                            <span>секунд</span>
-                        </div>
-                    </div>
-                    <div class="form__inputs">
-                        <label class="form__label">
-                            Ваше имя*
-                            <input
-                                type="text"
-                                class="form__input"
-                                placeholder="Введите ваше имя" />
-                        </label>
-                        <label class="form__label">
-                            Контактный телефон*
-                            <input
-                                type="tel"
-                                placeholder="+(7)-XXX-XXX-XX-XX"
-                                class="form__input" />
-                        </label>
-                    </div>
 
-                    <button class="form__btn" type="submit">
-                        ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО
-                    </button>
-                    <p class="form__attention">
-                        <span>*при заказе курса</span> Осталось всего
-                        <span id="counter"> 53</span>
-                        бесплатных упаковок
-                    </p>
+                        <button class="form__btn" type="submit">
+                            ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО
+                        </button>
+                        <p class="form__attention">
+                            <span>*при заказе курса</span> Осталось всего
+                            <span id="counter"> 53</span>
+                            бесплатных упаковок
+                        </p>
+                    </div>
                 </form>
                 <div class="container">
                     <section class="header__body">
@@ -196,14 +198,15 @@
             <section class="banner">
                 <div class="container">
                     <div class="banner__body banner__body--reverse">
-                        <p class="banner__text">
+                        <p class="banner__text banner__text--wide">
                             Сила Султана разработана на основе древнетурецких
                             рецептов, которые описаны еще в старинных преданиях
                             летописцев-монахов. Вы почувствуете себя настоящим
                             повелителем!
                         </p>
                         <img
-                            src="./img/banner/banner-img.svg"
+                            class="banner__img"
+                            src="./img/banner/banner-img.png"
                             alt="Сила Султана" />
                     </div>
                 </div>

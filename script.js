@@ -3,7 +3,7 @@
 const containerDesktop = document.querySelectorAll('.container');
 
 function checkScreenSize() {
-    if (window.innerWidth < 485) {
+    if (window.innerWidth < 480) {
         containerDesktop.forEach(el => {
             if (el.classList.contains('container--lg')) {
                 el.classList.remove('container--mobile');
