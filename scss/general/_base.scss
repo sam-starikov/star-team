@@ -2,49 +2,65 @@
 
 html,
 body {
-    font-family: var(--font-family);
-    color: var(--text-color-primary);
-    background-color: var(--white);
+  font-family: var(--font-family);
+  color: var(--text-color-primary);
+  background-color: var(--white);
 }
 
 a {
-    color: currentColor;
+  color: currentColor;
 }
 
 .wrapper {
-    min-height: 100vh;
-    overflow: hidden;
+  min-height: 100vh;
+  overflow: hidden;
 
-    &__header {
-        // margin-bottom: 40px;
-    }
+  &__header,
+  &__description,
+  &__how-info {
+    margin-bottom: 40px;
+  }
+  &__info {
+    margin-bottom: 35px;
+  }
+  &__form {
+    display: none;
+    height: 500px;
+    padding-top: 30px;
+    margin-bottom: 150px;
 
-    &__info {
-        margin-bottom: 35px;
+    @media (max-width: 700px) {
+      display: block;
     }
+  }
 }
 
 .container {
-    max-width: 1305px;
-    padding: 0 15px;
-    margin: 0 auto;
+  max-width: 1305px;
+  padding: 0 15px;
+  margin: 0 auto;
 
-    &--lg {
-        max-width: 1400px;
-    }
-    &--small {
-        max-width: 1095px;
-    }
-    &--mobile {
-        max-width: 350px;
-    }
-    &--right {
-        max-width: unset;
-        padding-left: calc((100% - 1305px) / 2);
-        padding-right: unset;
-    }
+  &--lg {
+    max-width: 1400px;
+  }
+  &--small {
+    max-width: 1095px;
+  }
+  &--mobile {
+    max-width: 350px;
+  }
+  &--right {
+    max-width: unset;
+    padding-left: calc((100% - 1305px) / 2);
+    padding-right: unset;
+  }
+  &--left {
+    max-width: unset;
+    padding-right: calc((100% - 1305px) / 2);
+    padding-left: unset;
+  }
 }
 
 .none {
-    display: none !important;
+  display: none !important;
 }

@@ -1,232 +1,306 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="/favicon.svg" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.svg" />
 
-        <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
-        <title>Sultan Power</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <section class="banner">
-                <div class="container">
-                    <div class="banner__body">
-                        <p class="banner__text">
-                            Хочешь почувствовать себя настоящим султаном в
-                            постели?
-                        </p>
-                        <button class="banner__btn">узнать как</button>
-                    </div>
-                </div>
-            </section>
+    <title>Sultan Power</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="banner">
+        <div class="container">
+          <div class="banner__body">
+            <p class="banner__text">Хочешь почувствовать себя настоящим султаном в постели?</p>
+            <button class="banner__btn">узнать как</button>
+          </div>
+        </div>
+      </section>
 
-            <header class="wrapper__header header">
-                <form class="form" action="">
-                    <div class="form__wrapper">
-                        <p class="form__title">
-                            Успей получить <span>Силу Султана бесплатно*</span>,
-                            пока действует акция
-                        </p>
-                        <p class="form__sub-title">Акция* закончится через</p>
-                        <div class="form__timer">
-                            <div class="form__column">
-                                <div class="form__hours">1</div>
-                                <span>часов</span>
-                            </div>
-                            <div class="form__column">
-                                <div class="form__minutes">20</div>
-                                <span>минут</span>
-                            </div>
-                            <div class="form__column">
-                                <div class="form__seconds">30</div>
-                                <span>секунд</span>
-                            </div>
-                        </div>
-                        <div class="form__inputs">
-                            <label class="form__label">
-                                Ваше имя*
-                                <input
-                                    type="text"
-                                    class="form__input"
-                                    placeholder="Введите ваше имя" />
-                            </label>
-                            <label class="form__label">
-                                Контактный телефон*
-                                <input
-                                    type="tel"
-                                    placeholder="+(7)-XXX-XXX-XX-XX"
-                                    class="form__input" />
-                            </label>
-                        </div>
-
-                        <button class="form__btn" type="submit">
-                            ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО
-                        </button>
-                        <p class="form__attention">
-                            <span>*при заказе курса</span> Осталось всего
-                            <span id="counter"> 53</span>
-                            бесплатных упаковок
-                        </p>
-                    </div>
-                </form>
-                <div class="container">
-                    <section class="header__body">
-                        <h1 class="header__title">
-                            Открой новые возможности и
-                            <span>пробуди</span> неизведанные
-                            <span>ощущения</span>
-                        </h1>
-                        <p class="header__sub-title">
-                            Секрет турецких правителей доступен и в наши дни
-                        </p>
-                        <p class="header__sub-title">
-                            Открывает новые возможности и пробуждает
-                            неизведанные ощущения
-                        </p>
-                    </section>
-                </div>
-            </header>
-
-            <section class="description">
-                <div class="description__decor"></div>
-
-                <div class="container">
-                    <h2 class="description__title description__title--mobile">
-                        Получите такое же удовольствие в постели, как султан от
-                        своего гарема!
-                    </h2>
-                </div>
-                <img
-                    class="description__img description__img--mobile"
-                    src="./img/description/description-bg-mobile.jpg"
-                    alt="background" />
-
-                <div class="container">
-                    <h2 class="description__title description__title--desktop">
-                        Получите такое же удовольствие в постели, как султан от
-                        своего гарема!
-                    </h2>
-                    <div class="description__body">
-                        <div class="description__text">
-                            <p>
-                                Какие ассоциации возникают при упоминании
-                                гарема? Красивые девушки, сидящие на софах.
-                                Сауны, где наложницы натирают себя
-                                ароматическими смесями. Битва, в которой сотни
-                                красавиц сражаются за внимание повелителя.
-                            </p>
-                            <p>
-                                Такие же ощущения вы испытаете после приема
-                                <span>Силы Султана!</span>
-                            </p>
-                        </div>
-                        <img
-                            class="description__img description__img--desktop"
-                            src="./img/description/description-bg.jpg"
-                            alt="background" />
-                    </div>
-                </div>
-            </section>
-
-            <div class="container container--lg">
-                <section class="wrapper__info info">
-                    <div class="container">
-                        <div class="info__body">
-                            <h2 class="info__title">
-                                Как на Востоке справлялись
-                                <span>с многоженством?</span>
-                            </h2>
-                            <div class="info__cards">
-                                <a href="#!" class="info__link">
-                                    <p>
-                                        Сексуальные<br />
-                                        обряды
-                                    </p>
-                                </a>
-                                <a href="#!" class="info__link">
-                                    <p>
-                                        Натуральные стимуляторы<br />
-                                        <span>сексуальной активности</span>
-                                    </p>
-                                </a>
-                                <a href="#!" class="info__link">
-                                    <p>Интимная <br />гимнастика</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+      <header class="wrapper__header header">
+        <form class="header__form form" action="">
+          <div class="form__wrapper">
+            <p class="form__title">Успей получить <span>Силу Султана бесплатно*</span>, пока действует акция</p>
+            <p class="form__sub-title">Акция* закончится через</p>
+            <div class="form__timer">
+              <div class="form__column">
+                <div class="form__hours">1</div>
+                <span>часов</span>
+              </div>
+              <div class="form__column">
+                <div class="form__minutes">20</div>
+                <span>минут</span>
+              </div>
+              <div class="form__column">
+                <div class="form__seconds">30</div>
+                <span>секунд</span>
+              </div>
+            </div>
+            <div class="form__inputs">
+              <label class="form__label">
+                Ваше имя*
+                <input type="text" class="form__input" placeholder="Введите ваше имя" />
+              </label>
+              <label class="form__label">
+                Контактный телефон*
+                <input type="tel" placeholder="+(7)-XXX-XXX-XX-XX" class="form__input" />
+              </label>
             </div>
 
-            <section class="description description--yellow">
-                <div class="container"></div>
-                <img
-                    class="description__img description__img--mobile"
-                    src="./img/description/description-bg-mobile-02.jpg"
-                    alt="background" />
-
-                <div class="container container--right">
-                    <div class="description__body">
-                        <ul class="description__text">
-                            <li>
-                                <span>Сила Султана</span> решает проблему
-                                комплексно, а не просто временно устраняет
-                                синдромы
-                            </li>
-                            <li>
-                                Рекомендован врачами для лечения, профилактики и
-                                получения новых ощущений
-                            </li>
-                            <li>
-                                Никаких побочных эффектов и негативного
-                                воздействия на организм.
-                            </li>
-                        </ul>
-                        <div class="description__img description__img--desktop">
-                            <img
-                                class=""
-                                src="./img/description/description-bg-02.jpg"
-                                alt="background" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="banner">
-                <div class="container">
-                    <div class="banner__body banner__body--reverse">
-                        <p class="banner__text banner__text--wide">
-                            Сила Султана разработана на основе древнетурецких
-                            рецептов, которые описаны еще в старинных преданиях
-                            летописцев-монахов. Вы почувствуете себя настоящим
-                            повелителем!
-                        </p>
-                        <img
-                            class="banner__img"
-                            src="./img/banner/banner-img.png"
-                            alt="Сила Султана" />
-                    </div>
-                </div>
-            </section>
-
-            <section class="how-info">
-                <div class="container">
-                    <div class="how-info__body">
-                        <img
-                            class="how-info__img"
-                            src="./img/img-bg.jpg"
-                            alt="info background" />
-                        <img
-                            class="how-info__img how-info__img--hidden"
-                            src="./img/img-bg-mobile.jpg"
-                            alt="info background" />
-                    </div>
-                </div>
-            </section>
+            <button class="form__btn" type="submit">ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО</button>
+            <p class="form__attention">
+              <span>*при заказе курса</span> Осталось всего
+              <span id="counter"> 53</span>
+              бесплатных упаковок
+            </p>
+          </div>
+        </form>
+        <div class="container">
+          <section class="header__body">
+            <h1 class="header__title">
+              Открой новые возможности и
+              <span>пробуди</span> неизведанные
+              <span>ощущения</span>
+            </h1>
+            <p class="header__sub-title">Секрет турецких правителей доступен и в наши дни</p>
+            <p class="header__sub-title">Открывает новые возможности и пробуждает неизведанные ощущения</p>
+          </section>
         </div>
-        <script src="./script.js"></script>
-    </body>
+      </header>
+
+      <section class="description">
+        <div class="description__decor"></div>
+
+        <div class="container">
+          <h2 class="description__title description__title--mobile">
+            Получите такое же удовольствие в постели, как султан от своего гарема!
+          </h2>
+        </div>
+        <img
+          class="description__img description__img--mobile"
+          src="./img/description/description-bg-mobile.jpg"
+          alt="background" />
+
+        <div class="container">
+          <h2 class="description__title description__title--desktop">
+            Получите такое же удовольствие в постели, как султан от своего гарема!
+          </h2>
+          <div class="description__body">
+            <div class="description__text">
+              <p>
+                Какие ассоциации возникают при упоминании гарема? Красивые девушки, сидящие на софах. Сауны, где
+                наложницы натирают себя ароматическими смесями. Битва, в которой сотни красавиц сражаются за внимание
+                повелителя.
+              </p>
+              <p>
+                Такие же ощущения вы испытаете после приема
+                <span>Силы Султана!</span>
+              </p>
+            </div>
+            <img
+              class="description__img description__img--desktop"
+              src="./img/description/description-bg.jpg"
+              alt="background" />
+          </div>
+        </div>
+      </section>
+
+      <div class="container container--lg">
+        <section class="wrapper__info info">
+          <div class="container">
+            <div class="info__body">
+              <h2 class="info__title">
+                Как на Востоке справлялись
+                <span>с многоженством?</span>
+              </h2>
+              <div class="info__cards">
+                <a href="#!" class="info__link">
+                  <p>
+                    Сексуальные<br />
+                    обряды
+                  </p>
+                </a>
+                <a href="#!" class="info__link">
+                  <p>
+                    Натуральные стимуляторы<br />
+                    <span>сексуальной активности</span>
+                  </p>
+                </a>
+                <a href="#!" class="info__link">
+                  <p>Интимная <br />гимнастика</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="description description--right">
+        <img
+          class="description__img description__img--mobile"
+          src="./img/description/description-bg-mobile-02.jpg"
+          alt="background" />
+
+        <div class="container container--right">
+          <div class="description__body">
+            <ul class="description__text">
+              <li><span>Сила Султана</span> решает проблему комплексно, а не просто временно устраняет синдромы</li>
+              <li>Рекомендован врачами для лечения, профилактики и получения новых ощущений</li>
+              <li>Никаких побочных эффектов и негативного воздействия на организм.</li>
+            </ul>
+            <div class="description__img description__img--desktop">
+              <img class="" src="./img/description/description-bg-02.jpg" alt="background" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="container">
+          <div class="banner__body banner__body--reverse">
+            <p class="banner__text banner__text--wide">
+              Сила Султана разработана на основе древнетурецких рецептов, которые описаны еще в старинных преданиях
+              летописцев-монахов. Вы почувствуете себя настоящим повелителем!
+            </p>
+            <img class="banner__img" src="./img/banner/banner-img.png" alt="Сила Султана" />
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper__how-info how-info">
+        <div class="container">
+          <div class="how-info__body">
+            <img class="how-info__img" src="./img/img-bg.jpg" alt="info background" />
+            <img class="how-info__img how-info__img--hidden" src="./img/img-bg-mobile.jpg" alt="info background" />
+          </div>
+        </div>
+      </section>
+
+      <section class="description description--left">
+        <img
+          class="description__img description__img--mobile"
+          src="./img/description/description-bg-03-mobile.jpg"
+          alt="background" />
+
+        <div class="container container--left">
+          <div class="description__body">
+            <div class="description__img description__img--desktop">
+              <img class="" src="./img/description/description-bg-03.jpg" alt="background" />
+            </div>
+            <p class="description__text">
+              Наши врачи несколько лет работали в Турции, собирая секретные ингредиенты древнетурецких средств для
+              повышения потенции. Мы запатентовали
+              <strong>Силу Султана</strong>, получили официальное право производить и реализовывать препарат по России и
+              в странах СНГ. Все подтверждающие документы и лицензии в электронном виде расположены на странице нашего
+              сайта.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <img class="cta__img" src="./img/cta-section-bg.png" alt="" />
+        <div class="container">
+          <h2 class="cta__title">Хочешь почувствовать себя настоящим султаном в постели?</h2>
+        </div>
+        <form class="cta__form form" action="">
+          <div class="form__wrapper">
+            <h3 class="form__title">Успей получить <span>Силу Султана бесплатно*</span>, пока действует акция</h3>
+            <p class="form__sub-title">Акция* закончится через</p>
+            <div class="form__timer">
+              <div class="form__column">
+                <div class="form__hours">1</div>
+                <span>часов</span>
+              </div>
+              <div class="form__column">
+                <div class="form__minutes">20</div>
+                <span>минут</span>
+              </div>
+              <div class="form__column">
+                <div class="form__seconds">30</div>
+                <span>секунд</span>
+              </div>
+            </div>
+            <div class="form__inputs">
+              <label class="form__label">
+                Ваше имя*
+                <input type="text" class="form__input" placeholder="Введите ваше имя" />
+              </label>
+              <label class="form__label">
+                Контактный телефон*
+                <input type="tel" placeholder="+(7)-XXX-XXX-XX-XX" class="form__input" />
+              </label>
+            </div>
+
+            <button class="form__btn" type="submit">ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО</button>
+            <p class="form__attention">
+              <span>*при заказе курса</span> Осталось всего
+              <span id="counter"> 53</span>
+              бесплатных упаковок
+            </p>
+          </div>
+        </form>
+      </section>
+
+      <section class="wrapper__form">
+        <div class="container">
+          <form class="form" action="">
+            <div class="form__wrapper">
+              <h3 class="form__title">Успей получить <span>Силу Султана бесплатно*</span>, пока действует акция</h3>
+              <p class="form__sub-title">Акция* закончится через</p>
+              <div class="form__timer">
+                <div class="form__column">
+                  <div class="form__hours">1</div>
+                  <span>часов</span>
+                </div>
+                <div class="form__column">
+                  <div class="form__minutes">20</div>
+                  <span>минут</span>
+                </div>
+                <div class="form__column">
+                  <div class="form__seconds">30</div>
+                  <span>секунд</span>
+                </div>
+              </div>
+              <div class="form__inputs">
+                <label class="form__label">
+                  Ваше имя*
+                  <input type="text" class="form__input" placeholder="Введите ваше имя" />
+                </label>
+                <label class="form__label">
+                  Контактный телефон*
+                  <input type="tel" placeholder="+(7)-XXX-XXX-XX-XX" class="form__input" />
+                </label>
+              </div>
+
+              <button class="form__btn" type="submit">ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО</button>
+              <p class="form__attention">
+                <span>*при заказе курса</span> Осталось всего
+                <span id="counter"> 53</span>
+                бесплатных упаковок
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="components">
+        <h2 class="components__title">
+          Каждая таблетка – это мощный комплекс <strong>100%</strong> натуральных компонентов.
+        </h2>
+        <div class="components__body">
+          <div class="components__container container">
+            <article class="components__item"></article>
+            <article class="components__item"></article>
+            <article class="components__item"></article>
+            <article class="components__item"></article>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
