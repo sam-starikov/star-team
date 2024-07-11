@@ -1,9 +1,27 @@
 .form {
-    width: 355px;
+    position: absolute;
+    z-index: 20;
+
+    top: clamp(0rem, -23.649rem + 54.05vw, 25rem);
+    right: clamp(0.313rem, -4.122rem + 10.14vw, 5rem);
+    width: clamp(17.5rem, 15.156rem + 7.81vw, 22.188rem);
+
     display: grid;
-    padding: 30px;
+    padding: clamp(0.938rem, 0.469rem + 1.56vw, 1.875rem);
+
     border-radius: 15px;
+    box-shadow: 0 4px 50px 0 rgba(136, 136, 136, 0.25);
     background-color: var(--white);
+
+    @media (max-width: 700px) {
+        top: 80%;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+    @media (max-width: 480px) {
+        top: 45%;
+        transform: translate(50%, 40%);
+    }
 
     &__title {
         text-align: center;

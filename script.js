@@ -1,7 +1,6 @@
 /* add mobile container */
 
 const containerDesktop = document.querySelectorAll('.container');
-console.log(containerDesktop);
 
 function checkScreenSize() {
     if (window.innerWidth < 485) {
@@ -24,18 +23,15 @@ window.addEventListener('resize', checkScreenSize);
 checkScreenSize();
 /* end */
 
-/* form timer */
-// Установка начальных значений времени
+/*set form timer */
 let hours = 23;
 let minutes = 59;
 let seconds = 59;
 
-// Получение элементов для отображения времени
 const hoursElement = document.querySelector('.form__hours');
 const minutesElement = document.querySelector('.form__minutes');
 const secondsElement = document.querySelector('.form__seconds');
 
-// Функция для обновления таймера
 function updateTimer() {
     seconds--;
     if (seconds < 0) {
@@ -59,22 +55,25 @@ function updateTimer() {
     }
 }
 
-// Запуск таймера
 const timerInterval = setInterval(updateTimer, 1000);
+/* end */
 
-let originalString = document.querySelector('.form__attention').textContent;
-console.log(originalString);
-let numbers = originalString.match(/\d+/g); // Находим все числа в строке
+/* set product count */
+const currentNumber = document.querySelector('#counter');
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+const randomNumber = () => {
+    currentNumber.textContent = Math.round(
+        Math.random() * currentNumber.textContent
+    );
 
-function updateString() {
-    let randomIndex = getRandomInt(0, numbers.length - 1);
-    let randomNumber = getRandomInt(1, 53); // Генерируем случайное число от 10 до 99
-    let newString = originalString.replace(numbers[randomIndex], randomNumber);
-    console.log(newString);
-}
+    if (currentNumber.textContent <= 2) {
+        currentNumber.textContent = 53;
+    }
+};
 
-setInterval(updateString, getRandomInt(1000, 5000)); // Вызываем функцию updateString с рандомным интервалом от 1 до 5 мин
+const formBtn = document
+    .querySelector('.form__btn')
+    .addEventListener('click', e => e.preventDefault());
+
+setInterval(randomNumber, 3000);
+/* end */
