@@ -3,14 +3,14 @@
 
   padding: 20px 0 0px;
 
-  background-image: url('./../img/header/header-bg.png');
+  background-image: url('./../img/header/header-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   aspect-ratio: 1440/1015;
 
   @media (max-width: 480px) {
-    background-image: url('./../img/header/header-bg-mobile.jpg');
+    background-image: url('./../img/header/header-bg-mobile.webp');
     aspect-ratio: 480/531;
   }
 

@@ -173,8 +173,8 @@
       <section class="wrapper__how-info how-info">
         <div class="container">
           <div class="how-info__body">
-            <img class="how-info__img" src="./img/img-bg.jpg" alt="info background" />
-            <img class="how-info__img how-info__img--hidden" src="./img/img-bg-mobile.jpg" alt="info background" />
+            <img class="how-info__img" src="./img/img-bg.webp" alt="info background" />
+            <img class="how-info__img how-info__img--hidden" src="./img/img-bg-mobile.webp" alt="info background" />
           </div>
         </div>
       </section>
@@ -202,7 +202,7 @@
       </section>
 
       <section class="cta">
-        <img class="cta__img" src="./img/cta-section-bg.png" alt="" />
+        <img class="cta__img" src="./img/cta-section-bg.webp" alt="" />
         <div class="container">
           <h2 class="cta__title">Хочешь почувствовать себя настоящим султаном в постели?</h2>
         </div>
@@ -246,7 +246,45 @@
       </section>
 
       <section class="wrapper__form-block">
-        <div class="container"></div>
+        <div class="container">
+          <form id="form-2" class="wrapper__form form" action="">
+            <div class="form__wrapper">
+              <h3 class="form__title">Успей получить <span>Силу Султана бесплатно*</span>, пока действует акция</h3>
+              <p class="form__sub-title">Акция* закончится через</p>
+              <div class="form__timer">
+                <div class="form__column">
+                  <div class="form__hours">1</div>
+                  <span>часов</span>
+                </div>
+                <div class="form__column">
+                  <div class="form__minutes">20</div>
+                  <span>минут</span>
+                </div>
+                <div class="form__column">
+                  <div class="form__seconds">30</div>
+                  <span>секунд</span>
+                </div>
+              </div>
+              <div class="form__inputs">
+                <label class="form__label">
+                  Ваше имя*
+                  <input type="text" class="form__input" placeholder="Введите ваше имя" />
+                </label>
+                <label class="form__label">
+                  Контактный телефон*
+                  <input type="tel" placeholder="+(7)-XXX-XXX-XX-XX" class="form__input" />
+                </label>
+              </div>
+
+              <button class="form__btn" type="submit">ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО</button>
+              <p class="form__attention">
+                <span>*при заказе курса</span> Осталось всего
+                <span id="counter"> 53</span>
+                бесплатных упаковок
+              </p>
+            </div>
+          </form>
+        </div>
       </section>
 
       <section class="components">
