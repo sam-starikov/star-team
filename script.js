@@ -3,19 +3,17 @@
 const containerDesktop = document.querySelectorAll('.container');
 
 function checkScreenSize() {
-    if (window.innerWidth < 480) {
-        containerDesktop.forEach(el => {
-            if (el.classList.contains('container--lg')) {
-                el.classList.remove('container--mobile');
-            } else {
-                el.classList.add('container--mobile');
-            }
-        });
-    } else {
-        containerDesktop.forEach(el =>
-            el.classList.remove('container--mobile')
-        );
-    }
+  if (window.innerWidth < 480) {
+    containerDesktop.forEach(el => {
+      if (el.classList.contains('container--lg')) {
+        el.classList.remove('container--mobile');
+      } else {
+        el.classList.add('container--mobile');
+      }
+    });
+  } else {
+    containerDesktop.forEach(el => el.classList.remove('container--mobile'));
+  }
 }
 
 window.addEventListener('resize', checkScreenSize);
@@ -33,26 +31,26 @@ const minutesElement = document.querySelector('.form__minutes');
 const secondsElement = document.querySelector('.form__seconds');
 
 function updateTimer() {
-    seconds--;
-    if (seconds < 0) {
-        seconds = 59;
-        minutes--;
-    }
-    if (minutes < 0) {
-        minutes = 59;
-        hours--;
-    }
+  seconds--;
+  if (seconds < 0) {
+    seconds = 59;
+    minutes--;
+  }
+  if (minutes < 0) {
+    minutes = 59;
+    hours--;
+  }
 
-    // Обновление значений на странице
-    hoursElement.textContent = hours < 10 ? '0' + hours : hours;
-    minutesElement.textContent = minutes < 10 ? '0' + minutes : minutes;
-    secondsElement.textContent = seconds < 10 ? '0' + seconds : seconds;
+  // Обновление значений на странице
+  hoursElement.textContent = hours < 10 ? '0' + hours : hours;
+  minutesElement.textContent = minutes < 10 ? '0' + minutes : minutes;
+  secondsElement.textContent = seconds < 10 ? '0' + seconds : seconds;
 
-    // Проверка на окончание времени
-    if (hours === 0 && minutes === 0 && seconds === 0) {
-        clearInterval(timerInterval);
-        alert('Время истекло!');
-    }
+  // Проверка на окончание времени
+  if (hours === 0 && minutes === 0 && seconds === 0) {
+    clearInterval(timerInterval);
+    alert('Время истекло!');
+  }
 }
 
 const timerInterval = setInterval(updateTimer, 1000);
@@ -62,18 +60,25 @@ const timerInterval = setInterval(updateTimer, 1000);
 const currentNumber = document.querySelector('#counter');
 
 const randomNumber = () => {
-    currentNumber.textContent = Math.round(
-        Math.random() * currentNumber.textContent
-    );
+  currentNumber.textContent = Math.round(Math.random() * currentNumber.textContent);
 
-    if (currentNumber.textContent <= 2) {
-        currentNumber.textContent = 53;
-    }
+  if (currentNumber.textContent <= 2) {
+    currentNumber.textContent = 53;
+  }
 };
 
-const formBtn = document
-    .querySelector('.form__btn')
-    .addEventListener('click', e => e.preventDefault());
+const formBtn = document.querySelector('.form__btn').addEventListener('click', e => e.preventDefault());
 
 setInterval(randomNumber, 3000);
 /* end */
+
+/* change id link for form */
+const liknOnForm = document.querySelector('[href="#form-2"]');
+
+window.addEventListener('resize', () => {
+  if (this.innerWidth <= 700) {
+    liknOnForm.href = '#form-3';
+  } else {
+    liknOnForm.href = '#form-2';
+  }
+});
