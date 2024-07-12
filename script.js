@@ -75,6 +75,14 @@ setInterval(randomNumber, 3000);
 /* change id link for form */
 const liknOnForm = document.querySelector('[href="#form-2"]');
 
+console.log();
+
+if (window.innerWidth <= 700) {
+  liknOnForm.href = '#form-3';
+} else {
+  liknOnForm.href = '#form-2';
+}
+
 window.addEventListener('resize', () => {
   if (this.innerWidth <= 700) {
     liknOnForm.href = '#form-3';
