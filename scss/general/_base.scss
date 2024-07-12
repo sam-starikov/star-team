@@ -23,15 +23,20 @@ a {
   &__info {
     margin-bottom: 35px;
   }
-  &__form {
+  &__form-block {
+    position: relative;
     display: none;
     height: 500px;
     padding-top: 30px;
-    margin-bottom: 150px;
 
     @media (max-width: 700px) {
       display: block;
     }
+  }
+  &__form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

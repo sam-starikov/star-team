@@ -8,16 +8,6 @@
   box-shadow: 0 4px 50px 0 rgba(136, 136, 136, 0.25);
   background-color: var(--white);
 
-  @media (max-width: 700px) {
-    top: clamp(19.375rem, 0.284rem + 63.64vw, 28.125rem);
-    right: 50%;
-    transform: translate(50%, 0);
-  }
-  @media (max-width: 480px) {
-    top: clamp(7.188rem, -12.188rem + 96.88vw, 16.875rem);
-    transform: translate(50%, 40%);
-  }
-
   &__title {
     text-align: center;
     font-size: 18px;
