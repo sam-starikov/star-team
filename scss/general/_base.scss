@@ -5,6 +5,8 @@ body {
   font-family: var(--font-family);
   color: var(--text-color-primary);
   background-color: var(--white);
+
+  scroll-behavior: smooth;
 }
 
 a {
